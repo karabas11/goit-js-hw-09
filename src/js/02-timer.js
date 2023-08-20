@@ -77,9 +77,8 @@ function addLeadingZero(value) {
 }
 
 function updateTimerFase({days, hours, minutes, seconds}) {
-  refs.dataDay.textContent = ${days};
-  refs.dataHours.textContent = ${hours};
-  refs.dataMinutes.textContent = ${minutes};
-  refs.dataSecondes.textContent = ${seconds};
-
+  refs.dataDay.textContent = `${days}`;
+  refs.dataHours.textContent = `${hours}`;
+  refs.dataMinutes.textContent = `${minutes}`;
+  refs.dataSecondes.textContent = `${seconds}`;
 }

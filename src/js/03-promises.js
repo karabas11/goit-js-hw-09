@@ -29,7 +29,7 @@ function onFormData(evt) {
       .catch(({ position, delay }) => {
         Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       });
-      }
+    }
 };
 
 function createPromise(position, delay) {
