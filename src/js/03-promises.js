@@ -18,9 +18,9 @@ function onFormData(evt) {
     step: step.value,
   }
 
-  for(let i = 0; i < data.amount; i += 1){
+  for(let i = 1; i <= data.amount; i += 1){
     const position = i;
-    const delay = Number(data.delay) + Number(position*data.step);
+    const delay = Number(data.delay) + Number((position-1)*data.step);
     
     createPromise(position, delay)
       .then(({ position, delay }) => {
